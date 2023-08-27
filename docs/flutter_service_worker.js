@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.json": "66332c50f6f79747b79b1eb2b18b8158",
-"assets/AssetManifest.smcbin": "a16fb9c588234a8324be8da89263a0f1",
+const RESOURCES = {"assets/AssetManifest.json": "8cdfad1b466d6571b1d363b757c6dc4e",
+"assets/AssetManifest.smcbin": "af30b7a0f40ef6560f9a9e7284cba74f",
 "assets/assets/images/alt-battery-0-svgrepo-com.svg": "2e57821461d92629ec57d206a19f4201",
 "assets/assets/images/alt-battery-2-svgrepo-com.svg": "d47ada95264cfe9df339b5c711100c76",
 "assets/assets/images/alt-battery-3-svgrepo-com.svg": "9ccebd4b9a4fe528b2cd9ad8663e0b66",
@@ -17,6 +17,7 @@ const RESOURCES = {"assets/AssetManifest.json": "66332c50f6f79747b79b1eb2b18b815
 "assets/assets/images/claire_xxl.png": "63b15aeaabafa2ec8e33054e03dcabe5",
 "assets/assets/images/dreamstime_xxl_122445093.jpg": "afbbfbead46f6c8a7cae8603a8503b0a",
 "assets/assets/images/send.png": "7c65b3872305ce20c9f81f05307c0451",
+"assets/assets/images/Setup.png": "70031520200441962e13765621b5760e",
 "assets/FontManifest.json": "38d8686268e56f92aa7db130b039bfc6",
 "assets/fonts/MaterialIcons-Regular.otf": "51ec0d720524f4ad3013ef5305d79973",
 "assets/NOTICES": "49ef88707d831f003ce8dcd526b9e706",
@@ -50,9 +51,9 @@ const RESOURCES = {"assets/AssetManifest.json": "66332c50f6f79747b79b1eb2b18b815
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "cb6aea01f047e9019588cfc72f7871fa",
-"/": "cb6aea01f047e9019588cfc72f7871fa",
-"main.dart.js": "58c947cf6bf95cfd798e3d55dd425544",
+"index.html": "f524f66c5ef385dc927d289c8bafe7ba",
+"/": "f524f66c5ef385dc927d289c8bafe7ba",
+"main.dart.js": "4dff6a7dcd9b0bae04c9e0e2fcc2c331",
 "manifest.json": "e76cd82539f143bfabb1a6ba8d19e6a2",
 "version.json": "73be94451399d6d89ceb7499d04660f1"};
 // The application shell files that are downloaded before a service worker can
