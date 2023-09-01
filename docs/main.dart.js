@@ -9526,7 +9526,7 @@ aIq:function aIq(){},
 aIr:function aIr(){},
 aIs:function aIs(){},
 aIt:function aIt(){},
-aW2(a){var s=a.b,r=a.a,q=A.fT(s.cq(0,"id"),r),p=A.fT(s.cq(0,"owner"),r),o=A.fT(s.cq(0,"text"),r)
+aW2(a){var s=a.b,r=a.a,q=A.fT(s.cq(0,"session_id"),r),p=A.fT(s.cq(0,"owner"),r),o=A.fT(s.cq(0,"text"),r)
 r=A.fT(s.cq(0,"timestamp"),r)
 if(r==null){s=A.Zh(1970,1,1,0,0,0,0,!1)
 if(!A.j7(s))A.a_(A.jV(s))
@@ -9792,8 +9792,9 @@ aCy:function aCy(a,b){this.a=a
 this.b=b},
 aCw:function aCw(a,b){this.a=a
 this.b=b},
-PN:function PN(a,b){this.d=a
-this.a=b},
+PN:function PN(a,b,c){this.c=a
+this.d=b
+this.a=c},
 agV:function agV(){},
 agU:function agU(){},
 agT:function agT(a){this.a=a},
@@ -53814,8 +53815,7 @@ o=A.aQ(a,m,s).w
 o=A.aD(m,A.aRY(new A.aCz(n,k),l.length,B.a7,!0),B.e,m,m,m,m,p.a.b*0.8,m,m,m,m,m,o.a.a*0.2)
 s=A.aQ(a,m,s).w
 p=n.f
-n.a.toString
-q=A.aD(m,A.bR(A.a([o,A.aD(m,new A.PN(p,m),B.e,m,m,m,m,m,m,m,m,m,m,s.a.a*0.4)],t.p),B.aU,B.t,B.n,m),B.e,m,m,m,m,r.a.b*0.8,m,m,m,m,m,q.a.a*0.9)
+q=A.aD(m,A.bR(A.a([o,A.aD(m,new A.PN(n.a.c,p,m),B.e,m,m,m,m,m,m,m,m,m,m,s.a.a*0.4)],t.p),B.aU,B.t,B.n,m),B.e,m,m,m,m,r.a.b*0.8,m,m,m,m,m,q.a.a*0.9)
 l=q}else l=A.aD(m,A.Y("There are no chats available yet.",m,m,m,m,m,m,m,m,m,m,m),B.e,m,m,m,m,m,m,m,m,m,m,m)
 return l}}
 A.aCD.prototype={
@@ -53857,7 +53857,7 @@ A.PN.prototype={
 gaqS(){var s=$.bz,r=(s==null?$.bz=$.de():s).ds(0,"[DEFAULT]")
 A.c1(r,$.du(),!0)
 s=A.nd(new A.cz(r))
-return A.mt(s,s.geQ().h1("chats")).dI(0,"anonymous").h1("conversations").Om(0,"id",this.d).iz(0).b2(0,new A.agV(),t.Ke)},
+return A.mt(s,s.geQ().h1("chats")).dI(0,this.c).h1("conversations").Om(0,"session_id",this.d).iz(0).b2(0,new A.agV(),t.Ke)},
 wM(a){var s=A.aR2(a.gMY())
 return A.ai8("yyyy-MM-dd",null).wL(s)},
 G(a){return A.amx(new A.agT(this),this.gaqS(),t.Ke)}}
