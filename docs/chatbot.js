@@ -109,7 +109,7 @@ function clairebot() {
   button.style.border = 'solid';
   button.style.padding = '0px';
   button.style.position = 'fixed';
-  button.style.bottom = '20px';
+  button.style.bottom = '60px';
   if (position == 'left') {
     button.style.left = '20px';
   } else {
