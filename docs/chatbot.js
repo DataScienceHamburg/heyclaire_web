@@ -49,7 +49,7 @@ function clairebot() {
   // get screen size
   var screenWidth = window.innerWidth;
   var screenHeight = window.innerHeight;
-  var widthBreakpoint = 500;
+  var widthBreakpoint = 400;
   var iframeWidthInt = screenWidth < widthBreakpoint ? screenWidth : 300;
   var server_url = 'https://king-prawn-app-igyir.ondigitalocean.app';
   
