@@ -75,8 +75,8 @@ function clairebot() {
   } else {
     iframe.style.right = screenWidth < widthBreakpoint ? '0px' : '20px';
   }
-  iframe.style.width = iframeWidthInt + 'px';
-  iframe.style.height = screenWidth < widthBreakpoint ? screenHeight + 'px' : '400px';
+  iframe.style.width = '50px'; //iframeWidthInt + 'px';
+  iframe.style.height = '50px'; //screenWidth < widthBreakpoint ? screenHeight + 'px' : '400px';
   iframe.style.border = 'none';
   iframe.style.borderRadius = '10px';
   iframe.style.overflow = 'hidden';  // hide scrollbar
@@ -212,6 +212,7 @@ function getChatbotAnswer(text, session_id, uid) {
 }
 
 function toggleChatWindow() {
+
   if (showChatbot == true) {
     // hide the chatbot
     iframe.style.display = 'none';
@@ -219,6 +220,8 @@ function toggleChatWindow() {
     
   } else {
     // show the chatbot
+    iframe.style.width = iframeWidthInt + 'px';
+    iframe.style.height = screenWidth < widthBreakpoint ? screenHeight + 'px' : '400px';
     iframe.style.display = 'block';
     //  hide the button
     button.style.display = 'none';
