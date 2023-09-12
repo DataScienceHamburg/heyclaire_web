@@ -1,46 +1,14 @@
 function clairebot() {
-  const words = [
-    "apple",
-    "banana",
-    "cat",
-    "dog",
-    "elephant",
-    "forest",
-    "guitar",
-    "house",
-    "island",
-    "jungle",
-    "kangaroo",
-    "lion",
-    "mountain",
-    "ocean",
-    "parrot",
-    "quokka",
-    "river",
-    "sunflower",
-    "tiger",
-    "zebra"
-  ];
-
+  
   function generateSessionID() {
-    // Number of words to include in the session ID
-    const numberOfWords = 3; // You can adjust this number as needed
-  
-    // Initialize an array to store the selected words
-    const selectedWords = [];
-  
-    // Randomly select words
-    while (selectedWords.length < numberOfWords) {
-      const randomIndex = Math.floor(Math.random() * words.length);
-      const randomWord = words[randomIndex];
-      
-      // Ensure that the same word is not selected twice
-      if (!selectedWords.includes(randomWord)) {
-        selectedWords.push(randomWord);
-      }
-    }
-    // Join the selected words to create the session ID
-    const sessionID = selectedWords.join('_');
+    var date = new Date();
+    var year = String(date.getFullYear()).padStart(4, '0');
+    var month = String(date.getMonth()).padStart(2, '0');
+    var day = String(date.getDate()).padStart(2, '0');
+    var hour = String(date.getHours()).padStart(2, '0');
+    var minutes = String(date.getMinutes()).padStart(2, '0');
+    var seconds = String(date.getSeconds()).padStart(2, '0');
+    const sessionID = `${year}-${month}-${day} ${hour}:${minutes}:${seconds}`;
     return sessionID;
   }
   var session_id = generateSessionID();
