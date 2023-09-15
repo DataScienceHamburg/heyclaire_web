@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.json": "f85ab3eb2d5bcd1882fa7095e64a52d6",
-"assets/AssetManifest.smcbin": "ceb14212bff8353ac7e44059f02ebb7b",
+const RESOURCES = {"assets/AssetManifest.json": "5599a3a9d1d8ff5bc1fe02295e1c35d2",
+"assets/AssetManifest.smcbin": "44685f6771de1640dd7237dc3aa13ee3",
 "assets/assets/fonts/Lora-Bold.ttf": "04a54a65953cf0c6f9c2170ee70ee8b7",
 "assets/assets/fonts/Lora-Medium.ttf": "4e4f1dc55a062af61b51c783c510b6ca",
 "assets/assets/fonts/Lora-Regular.ttf": "5fbbc2dd9545c49556bbf4323e73ffe0",
@@ -21,6 +21,7 @@ const RESOURCES = {"assets/AssetManifest.json": "f85ab3eb2d5bcd1882fa7095e64a52d
 "assets/assets/images/claire_s_white_round.png": "8dbb7977d4dd096347c56cd7055173eb",
 "assets/assets/images/claire_xxl.png": "63b15aeaabafa2ec8e33054e03dcabe5",
 "assets/assets/images/dreamstime_xxl_122445093.jpg": "afbbfbead46f6c8a7cae8603a8503b0a",
+"assets/assets/images/Hands.png": "33a7e1c0997d19ecae7ea40941d5661d",
 "assets/assets/images/send.png": "7c65b3872305ce20c9f81f05307c0451",
 "assets/assets/images/Setup.png": "bae22791fbb37920b2a7a3dd09a5f60f",
 "assets/FontManifest.json": "b11909eca2f4b0e6859960f57ca101ed",
@@ -56,9 +57,9 @@ const RESOURCES = {"assets/AssetManifest.json": "f85ab3eb2d5bcd1882fa7095e64a52d
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "737315ec1089a7cd5bd8cc00ea5a3106",
-"/": "737315ec1089a7cd5bd8cc00ea5a3106",
-"main.dart.js": "b351bd49b7b0494de4b2411386ee9d2e",
+"index.html": "f3576d4c1b85cd1f65002b1e51807ee1",
+"/": "f3576d4c1b85cd1f65002b1e51807ee1",
+"main.dart.js": "17812d5d7309592aab0acf695dd07e9c",
 "manifest.json": "e76cd82539f143bfabb1a6ba8d19e6a2",
 "version.json": "73be94451399d6d89ceb7499d04660f1"};
 // The application shell files that are downloaded before a service worker can
