@@ -1,8 +1,9 @@
-document.addEventListener("DOMContentLoaded", (function() {
+function clairebot() {
+  
   function generateSessionID() {
     var date = new Date();
     var year = String(date.getFullYear()).padStart(4, '0');
-    var month = String(date.getMonth()+1).padStart(2, '0');
+    var month = String(date.getMonth()).padStart(2, '0');
     var day = String(date.getDate()).padStart(2, '0');
     var hour = String(date.getHours()).padStart(2, '0');
     var minutes = String(date.getMinutes()).padStart(2, '0');
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (function() {
   // get screen size
   var screenWidth = window.innerWidth;
   var screenHeight = window.innerHeight;
-  var widthBreakpoint = 500;
+  var widthBreakpoint = 400;
   var iframeWidthInt = screenWidth < widthBreakpoint ? screenWidth : 300;
   var server_url = 'https://king-prawn-app-igyir.ondigitalocean.app';
   
@@ -42,8 +43,8 @@ document.addEventListener("DOMContentLoaded", (function() {
   } else {
     iframe.style.right = screenWidth < widthBreakpoint ? '0px' : '20px';
   }
-  iframe.style.width = iframeWidthInt + 'px';
-  iframe.style.height = screenWidth < widthBreakpoint ? screenHeight + 'px' : '400px';
+  iframe.style.width = '50px'; //iframeWidthInt + 'px';
+  iframe.style.height = '50px'; //screenWidth < widthBreakpoint ? screenHeight + 'px' : '400px';
   iframe.style.border = 'none';
   iframe.style.borderRadius = '10px';
   iframe.style.overflow = 'hidden';  // hide scrollbar
@@ -76,7 +77,7 @@ document.addEventListener("DOMContentLoaded", (function() {
   button.style.border = 'solid';
   button.style.padding = '0px';
   button.style.position = 'fixed';
-  button.style.bottom = '20px';
+  button.style.bottom = '60px';
   if (position == 'left') {
     button.style.left = '20px';
   } else {
@@ -179,6 +180,7 @@ function getChatbotAnswer(text, session_id, uid) {
 }
 
 function toggleChatWindow() {
+
   if (showChatbot == true) {
     // hide the chatbot
     iframe.style.display = 'none';
@@ -186,6 +188,8 @@ function toggleChatWindow() {
     
   } else {
     // show the chatbot
+    iframe.style.width = iframeWidthInt + 'px';
+    iframe.style.height = screenWidth < widthBreakpoint ? screenHeight + 'px' : '400px';
     iframe.style.display = 'block';
     //  hide the button
     button.style.display = 'none';
@@ -527,4 +531,6 @@ function toggleChatWindow() {
     var iframeBody = iframe.contentDocument.body;
      }
 }
-})());
+}
+
+document.addEventListener("DOMContentLoaded", clairebot);
