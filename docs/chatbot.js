@@ -3,7 +3,7 @@ function clairebot() {
   function generateSessionID() {
     var date = new Date();
     var year = String(date.getFullYear()).padStart(4, '0');
-    var month = String(date.getMonth()).padStart(2, '0');
+    var month = String(date.getMonth()+1).padStart(2, '0');
     var day = String(date.getDate()).padStart(2, '0');
     var hour = String(date.getHours()).padStart(2, '0');
     var minutes = String(date.getMinutes()).padStart(2, '0');
